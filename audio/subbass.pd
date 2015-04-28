@@ -1,0 +1,35 @@
+#N canvas 562 22 667 670 10;
+#X obj -106 89 osc~ 55;
+#X obj -51 87 osc~ 110;
+#X obj -51 27 r~ frequency;
+#X obj -75 281 s~ subbassoutput;
+#X obj -78 195 spigot~;
+#X obj 132 118 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj -75 230 *~;
+#X obj 103 192 dbtorms;
+#X obj 106 155 hsl 128 15 75 110 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X floatatom 103 218 5 0 0 0 - - -;
+#X text 111 99 Sub Bass Oscillator;
+#X text 158 113 Bypass;
+#X text 137 154 Amplitude;
+#X obj 33 51 loadbang;
+#X obj 35 76 1;
+#X obj -106 124 /~ 2;
+#X obj -51 125 /~ 2;
+#X connect 0 0 15 0;
+#X connect 1 0 16 0;
+#X connect 2 0 1 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 1;
+#X connect 6 0 3 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 9 0 6 1;
+#X connect 13 0 14 0;
+#X connect 13 0 5 0;
+#X connect 14 0 8 0;
+#X connect 15 0 4 0;
+#X connect 16 0 4 0;
+#X coords 0 -1 1 1 140 80 2 100 100;
